@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Small tools for the web</title>
+<style>
+  :root { --bg: #F4F5F8; --ink: #161B24; --muted: #586274; --line: #DDE1E8; --pink: #E8166F;
+    --f: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #11151C; --ink: #E8ECF2; --muted: #9CA6B6; --line: #2A3140; --pink: #FF4D93; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 var(--f); }
+  main { max-width: 640px; margin: 0 auto; padding: 48px max(20px, env(safe-area-inset-right)) 48px max(20px, env(safe-area-inset-left)); }
+  h1 { font-size: 28px; letter-spacing: -.02em; margin: 0 0 6px; }
+  p { color: var(--muted); margin: 0 0 28px; }
+  a.item { display: flex; gap: 14px; align-items: center; padding: 14px 0; border-top: 1px solid var(--line); color: var(--ink); text-decoration: none; }
+  a.item img { width: 40px; height: 40px; }
+  a.item span { color: var(--muted); font-size: 14.5px; display: block; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Small tools for the web</h1>
+  <p>Focused browser extensions and add-ons. Free to start, no ads.</p>
+  <a class="item" href="specmatch/"><img src="specmatch/icon128.png" alt=""><div><b>SpecMatch</b><span>Pixel perfect design overlay for Chrome</span></div></a>
+</main>
+</body>
+</html>

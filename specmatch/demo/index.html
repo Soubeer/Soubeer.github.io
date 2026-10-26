@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fernbrook Coffee (SpecMatch demo page)</title>
+<style>
+  /* A made-up shop page for trying SpecMatch. design.png is its "design":
+     a few things here are deliberately slightly off. Find them! */
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #FBF8F3; color: #2B2420; font: 16px/1.6 Georgia, "Times New Roman", serif; }
+  .demo-note { background: #1B1F27; color: #E8ECF2; font: 14px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding: 10px 24px; }
+  .demo-note a { color: #FF7DB2; }
+  nav { display: flex; align-items: center; gap: 28px; padding: 22px 64px; border-bottom: 1px solid #E7DFD3; }
+  nav b { font-size: 22px; margin-right: auto; letter-spacing: .01em; }
+  nav a { color: #5A4D44; text-decoration: none; font-size: 15px; }
+  .hero { display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; padding: 64px; align-items: center; }
+  h1 { font-size: 52px; line-height: 1.1; margin: 0 0 18px; font-weight: 600; }
+  .hero p { font-size: 18px; color: #5A4D44; margin: 0 0 28px; max-width: 30em; }
+  .btn { display: inline-block; background: #3E6B4F; color: #fff; padding: 14px 26px; border-radius: 8px; font: 600 16px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; text-decoration: none; }
+  .photo { aspect-ratio: 4/3; border-radius: 16px; background: linear-gradient(135deg, #C9A27E, #7B5134); }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding: 0 64px 72px; }
+  .card { background: #fff; border: 1px solid #E7DFD3; border-radius: 12px; padding: 24px; }
+  .card h3 { margin: 0 0 6px; font-size: 21px; }
+  .card p { margin: 0; color: #6B5D52; font-size: 15px; }
+  .price { display: block; margin-top: 14px; font: 600 15px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #3E6B4F; }
+</style>
+</head>
+<body>
+<div class="demo-note">SpecMatch demo page. Load <a href="design.png">design.png</a> as a layer, switch to Difference mode, and spot the three mistakes.</div>
+<nav><b>Fernbrook Coffee</b><a href="#">Shop</a><a href="#">Subscriptions</a><a href="#">Our farms</a><a href="#">Cart (0)</a></nav>
+<div class="hero">
+  <div>
+    <h1>Small-batch coffee, roasted every Tuesday.</h1>
+    <p>Single-origin beans from three family farms, roasted in small batches and shipped within 48 hours.</p>
+    <a class="btn" href="#">Shop the beans</a>
+  </div>
+  <div class="photo" role="img" aria-label="Coffee beans"></div>
+</div>
+<div class="cards">
+  <div class="card"><h3>Huila, Colombia</h3><p>Red apple, caramel, cocoa nibs.</p><span class="price">€14.50 · 250 g</span></div>
+  <div class="card"><h3>Sidama, Ethiopia</h3><p>Jasmine, bergamot, peach.</p><span class="price">€16.00 · 250 g</span></div>
+  <div class="card"><h3>Minas Gerais, Brazil</h3><p>Hazelnut, milk chocolate.</p><span class="price">€12.50 · 250 g</span></div>
+</div>
+</body>
+</html>
